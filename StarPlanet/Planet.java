@@ -84,13 +84,13 @@ class CelestialObject {
     double z;
     double magnitude;
 
-    // Default constructor
+
     public CelestialObject() {
         this.name = "Unknown";
         this.x = this.y = this.z = 0.0;
     }
 
-    // Parameterized constructor
+
     public CelestialObject(String name, double x, double y, double z, double m) {
         this.name = name;
         this.x = x;
@@ -99,7 +99,7 @@ class CelestialObject {
         this.magnitude = m;
     }
 
-    // Static method to compute distance between two CelestialObjects
+
     public static double distanceBetween(CelestialObject a, CelestialObject b) {
         double dx = a.x - b.x;
         double dy = a.y - b.y;
